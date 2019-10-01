@@ -24,29 +24,25 @@
             <div class="row">
                 <div class="col s6 offset-s3">
                     <h3 class="center-align">Register Form</h3>
-                    <form class="col s12">
+                    <form class="col s12" id="register-form" method="post">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="name" type="text">
-                                <label for="name">Name</label>
+                                <input name="name" type="text" placeholder="Name">
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="date" type="text" class="datepicker">
-                                <label for="date">Date of Birth</label>
+                                <input name="date" type="text" class="datepicker" placeholder="Date of Birth">
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="email" type="email">
-                                <label for="email">Email</label>
+                                <input name="email" type="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="color" type="text">
-                                <label for="color">Favorite Color</label>
+                                <input name="color" type="text" placeholder="Favorite Color">
                             </div>
                         </div>
                         <button class="btn waves-effect waves-light btn-large indigo accent-3" type="submit" name="action">Submit
@@ -58,6 +54,8 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="assets/js/index.js"></script>
     </body>

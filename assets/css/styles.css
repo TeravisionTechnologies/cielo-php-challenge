@@ -14,3 +14,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]) {
     border-bottom: 1px solid #3d5afe;
 }
+
+#name-error, #date-error, #email-error, #color-error {
+    color: red;
+}
