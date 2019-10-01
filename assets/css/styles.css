@@ -1,0 +1,16 @@
+h3 {
+    margin-bottom: 2rem;
+}
+
+form {
+    text-align: center;
+}
+
+.datepicker-date-display {
+    background-color: #3d5afe;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #3d5afe;
+}
