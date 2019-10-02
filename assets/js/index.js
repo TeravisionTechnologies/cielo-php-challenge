@@ -1,10 +1,8 @@
 $(document).ready(function() {
 
-    //Datepicker
-    $('.datepicker').datepicker({
-        format: 'mm/dd/yyyy',
-        maxDate: new Date(),
-    });
+    $.validator.addMethod("nameRegex", function(value, element) {
+        return this.optional(element) || /^[a-z\-\s]+$/i.test(value);
+    }, "Name must contain only letters");
 
     //JQuery Validation
     $("#register-form").validate({
@@ -12,7 +10,7 @@ $(document).ready(function() {
             name: {
                 required: true,
                 maxlength: 20, //preguntar a ignacio
-                lettersonly: true
+                nameRegex: true,
             },
             date: {
                 required: true
@@ -23,9 +21,7 @@ $(document).ready(function() {
                 email: true
             },
             color: {
-                required: true,
-                maxlength: 20, //preguntar a ignacio
-                lettersonly: true
+                required: true
             }
         },
         messages: {
@@ -43,9 +39,7 @@ $(document).ready(function() {
                 email: "The field doesn't have the format of an email"
             },
             color: {
-                required: "The favorite color is required",
-                maxlength: "The field must have less than 20 characters", //preguntar a ignacio
-                lettersonly: "The field must contain only letters"
+                required: "The favorite color is required"
             },
         },
         submitHandler: function(form) {

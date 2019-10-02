@@ -10,45 +10,51 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Cielo - Coding Challenge</title>
 
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet">
     </head>
     <body>
         <div>
-            <nav class="indigo accent-3">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo center">CIELO Coding Challenge</a>
-                </div>
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">CIELO Coding Challenge</a>
             </nav>
-            <div class="row">
-                <div class="col s6 offset-s3">
-                    <h3 class="center-align">Register Form</h3>
-                    <form class="col s12" id="register-form" method="post">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input name="name" type="text" placeholder="Name">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3">
+                        <h3 class="center-align py-4">Register Form</h3>
+                        <form class="d-flex flex-column" id="register-form" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" name="name" id="name">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input name="date" type="text" class="datepicker" placeholder="Date of Birth">
+                            <div class="form-group">
+                                <label for="date">Date of Birth</label>
+                                <input type="date" class="form-control" name="date" id="date">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input name="email" type="email" placeholder="Email">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input name="color" type="text" placeholder="Favorite Color">
+                            <div class="form-group">
+                                <label for="color">Favorite Color</label>
+                                <select class="form-control" name="color" id="color">
+                                    <option selected value="">Select your favorite color</option>
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="green">Green</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="purple">Purple</option>
+                                    <option value="grey">Grey</option>
+                                    <option value="brown">Brown</option>
+                                    <option value="orange">Orange</option>
+                                    <option value="pink">Pink</option>
+                                </select>
                             </div>
-                        </div>
-                        <button class="btn waves-effect waves-light btn-large indigo accent-3" type="submit" name="action">Submit
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </form>
+                            <button type="submit" class="btn btn-primary align-self-center">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,7 +62,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/index.js"></script>
     </body>
 </html>
