@@ -19,7 +19,7 @@ class User extends CI_Model
             [
                 'field' => 'name',
                 'label' => 'Name',
-                'rules' => 'required',
+                'rules' => 'required|min_length[3]|max_length[120]',
                 'errors' =>
                     [
                         'required' => 'You must provide a %s.',
@@ -46,10 +46,10 @@ class User extends CI_Model
             [
                 'field' => 'email',
                 'label' => 'Email',
-                'rules' => 'required|valid_email|is_unique[users.email]',
+                'rules' => 'required|min_length[11]|max_length[120]valid_email|is_unique[users.email]',
                 [
                     'required' => 'You must provide a %s.',
-                    'is_unique' => 'This %s already exists.'
+                    'is_unique' => 'This %s already exists.',
                 ],
             ],
         ];

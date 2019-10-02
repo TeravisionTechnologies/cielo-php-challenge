@@ -30,10 +30,10 @@ class Form extends CI_Controller
     {
         header('Content-Type: application/json');
         $errors = null;
+        $msg = null;
         try {
             $this->load->model('user');
             $this->load->database();
-
             $this->form_validation->set_rules($this->user->validations());
             if ($this->form_validation->run() == FALSE) {
                 $errors = $this->form_validation->error_array();
@@ -45,13 +45,15 @@ class Form extends CI_Controller
                     'favorite_color' => $this->input->post('favorite_color')
                 );
                 $this->user->create($data);
+                $msg = 'Congratulations! We saved your data successfully.';
             }
         } catch (Exception $e) {
             $errors['general'] = 'Whoops something went wrong!';
         }
         echo json_encode(
             [
-                'errors' => $errors
+                'errors' => $errors,
+                'message' => $msg
             ]
         );
     }
