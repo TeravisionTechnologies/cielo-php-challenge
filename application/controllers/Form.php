@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class Form extends CI_Controller
 {
@@ -12,7 +12,6 @@ class Form extends CI_Controller
         parent::__construct();
         $this->load->helper('url', 'form');
         $this->load->library('form_validation');
-
     }
 
     /**
@@ -35,7 +34,7 @@ class Form extends CI_Controller
             $this->load->model('user');
             $this->load->database();
             $this->form_validation->set_rules($this->user->validations());
-            if ($this->form_validation->run() == FALSE) {
+            if ($this->form_validation->run() == false) {
                 $errors = $this->form_validation->error_array();
             } else {
                 $data = array(

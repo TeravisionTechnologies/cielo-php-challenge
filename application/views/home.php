@@ -1,7 +1,6 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Cielo - Coding Challenge</title>
-
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet">
     </head>
@@ -58,7 +56,6 @@
                 </div>
             </div>
         </div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
