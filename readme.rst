@@ -9,7 +9,7 @@ Installation Steps
 -  Copy the ``.env.sample`` file as ``.env`` located at
    ``/application/config``
 -  Modify the database credentials on the ``.env`` file
--  Run the ``composer install`` command
+-  Go to ``/application`` and Run the ``composer install`` command
 -  Restore the database dump or run the migrations
 
    -  Execute the command ``php index.php migrate`` to run the
