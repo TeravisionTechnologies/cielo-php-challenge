@@ -12,7 +12,7 @@ application/logs/*
 composer.lock
 
 /user_guide/
-/vendor/
+application/vendor/
 
 # IDE Files
 #-------------------------
