@@ -6,6 +6,7 @@ Installation Steps
 
 -  Clone the repository
 -  Create a VirtualHost to the follow url ``cielo-php-challenge.dev``
+   - Example of VirtualHost: ``/cielo-php-challenge.conf``
 -  Copy the ``.env.sample`` file as ``.env`` located at
    ``/application/config``
 -  Modify the database credentials on the ``.env`` file
