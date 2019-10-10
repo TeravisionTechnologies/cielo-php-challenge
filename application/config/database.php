@@ -77,6 +77,7 @@ $db['default'] = array(
     'dsn' => '',
     'hostname' => getenv('DB_HOST'),
     'username' => getenv('DB_USER'),
+    'port' => getenv('DB_PORT'),
     'password' => getenv('DB_PASS'),
     'database' => getenv('DB_NAME'),
     'dbdriver' => getenv('DB_DRIVER'),
